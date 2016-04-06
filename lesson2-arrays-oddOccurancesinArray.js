@@ -36,6 +36,8 @@ expected worst-case time complexity is O(N);
 expected worst-case space complexity is O(1), beyond input storage (not counting the storage required for input arguments).
 */
 
+
+// Solution 1: Without using bitwise operator
 var oddMan = function(A) {
   A = A.sort();
   var result;
@@ -48,6 +50,14 @@ var oddMan = function(A) {
   return result;
 };
 
+// Solution 2: Using bitwise operator
+var oddMan = function(A) {
+  var result;
+  for (var i = 0; i < A.length; i+=2) {
+  	result ^= A[i];
+  }
+  return result;
+};
 
 var arr = [2, 3, 4, 5, 5, 1, 4, 3, 2];
 

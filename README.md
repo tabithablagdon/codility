@@ -1,3 +1,4 @@
 # codility
 
-This repository contains solutions for algorithm exercises from codility
+Algorithms coded from Codility lesson exercises
+

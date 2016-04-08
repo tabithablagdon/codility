@@ -30,3 +30,17 @@ expected worst-case time complexity is O(N);
 expected worst-case space complexity is O(1), beyond input storage (not counting the storage required for input arguments).
 Elements of input arrays can be modified.
 */
+
+var missingElem1 = function(A) {
+  var sumShouldBe = A.length + 1;
+  var sumIs = 0;
+  
+  for (var i = 0; i < A.length; i++) {
+  	sumIs += A[i];
+  	sumShouldBe += i+1;
+  }
+  
+  return sumShouldBe - sumIs;
+};
+
+missingElem1([2, 3, 1, 5]);

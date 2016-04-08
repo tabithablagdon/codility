@@ -1,5 +1,6 @@
 /*
 LESSON 3 - Time Complexity: PermMissingElem - Find the missing element in a given permutation.
+SCORE: Correctness 100%, Performance 100%
 
 A zero-indexed array A consisting of N different integers is given. The array contains integers in the range [1..(N + 1)], 
 which means that exactly one element is missing.
@@ -34,12 +35,10 @@ Elements of input arrays can be modified.
 var missingElem1 = function(A) {
   var sumShouldBe = A.length + 1;
   var sumIs = 0;
-  
   for (var i = 0; i < A.length; i++) {
   	sumIs += A[i];
   	sumShouldBe += i+1;
   }
-  
   return sumShouldBe - sumIs;
 };
 

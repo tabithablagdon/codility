@@ -32,9 +32,26 @@ expected worst-case space complexity is O(1), beyond input storage (not counting
 Elements of input arrays can be modified.
 */
 
+// #### Solution using XOR operator (less chance of overflow) ####
+
+var missingElem2 = function(A){
+  var missing = A.length + 1;
+  for (var i = 0; i < A.length; i++) {
+    missing = missing ^ A[i] ^ (i + 1);
+  }
+  return missing;
+};
+
+missingElem2([]);
+// => 1
+missingElem2([1, 3, 2]);
+// => 4
+
+// #### Solution using += ####
+
 var missingElem1 = function(A) {
-  var sumShouldBe = A.length + 1;
-  var sumIs = 0;
+  var sumShouldBe = A.length + 1,
+      sumIs = 0;
   for (var i = 0; i < A.length; i++) {
   	sumIs += A[i];
   	sumShouldBe += i+1;

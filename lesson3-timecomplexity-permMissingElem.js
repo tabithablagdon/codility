@@ -44,3 +44,4 @@ var missingElem1 = function(A) {
 };
 
 missingElem1([2, 3, 1, 5]);
+// => 4

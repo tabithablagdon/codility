@@ -1,5 +1,6 @@
 /*
 Lesson 6 - Sorting: Distinct 
+Score: Correctioness - 100%, Performance - 100% (O(N*log(N)))
 
 Task: Compute number of distinct values in an array.
 

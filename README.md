@@ -1,4 +1,4 @@
 # codility
 
-Algorithms coded from Codility lesson exercises
+Behold!  My solutions from solving Codility lesson algorithm problems.  
 

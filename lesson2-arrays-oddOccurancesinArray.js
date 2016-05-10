@@ -41,7 +41,7 @@ expected worst-case space complexity is O(1), beyond input storage (not counting
 var oddMan = function(A) {
   A = A.sort();
   var result;
-  for (var i = 0; i < A.length; i++) {
+  for (var i = 0; i < A.length; i+=2) {
   	if (A[i] !== A[i+1]) {
   	  result = A[i];
   	  break;
@@ -53,7 +53,7 @@ var oddMan = function(A) {
 // Solution 2: Using bitwise operator
 var oddMan = function(A) {
   var result;
-  for (var i = 0; i < A.length; i+=2) {
+  for (var i = 0; i < A.length; i++) {
   	result ^= A[i];
   }
   return result;
